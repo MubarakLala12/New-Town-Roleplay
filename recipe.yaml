@@ -1,0 +1,19 @@
+$engine: 3
+$onesync: on
+name: CFX Default
+version: 3.3.0
+author: Tabarra
+description: Recipe for the base resources required to run a minimal FiveM server.
+
+tasks: 
+  # Download default CFX resources
+  - action: download_github
+    src: https://github.com/MubarakLala12/New-Town-Roleplay.git
+    ref: master
+    subpath: resources
+    dest: ./resources
+
+  # Download default server.cfg
+  - action: download_file
+    url: https://github.com/MubarakLala12/New-Town-Roleplay.git
+    path: ./server.cfg
