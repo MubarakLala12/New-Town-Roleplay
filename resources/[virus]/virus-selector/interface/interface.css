@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Bebas Neue');
+
+body {
+    display: none;
+    margin: 0%;
+    font-family: 'Bebas Neue';
+    color: white;
+    user-select: none;
+    letter-spacing: 4px;
+}
+
+.shadow {
+    position: fixed;
+    box-shadow:100px 100px 800px 200px rgba(0, 0, 0, 0.8) inset; 
+    width: 100%;
+    height: 100%;
+}
+
+.location {
+    z-index: 999;
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+}
+
+.location .name {
+    font-size: 6vh;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+    border: 1px solid white;
+    border-right: 1px solid rgba(255, 255, 255, 0);
+    border-left:1px solid rgba(255, 255, 255, 0) ;
+    border-top:1px solid rgba(255, 255, 255, 0) ;
+    padding:5px;
+}
+
+.location .hr {
+    margin: 1vh 0vh 1vh 0vh;
+    filter: blur(0.1vh);
+    -webkit-filter: blur(0.1vh);
+    background-color: RGBA(0,0,0, 0.3);
+    width: 50vh;
+    padding: 0.3vh 0.2vh 0.3vh 0.2vh;
+    border-radius: 1vh;
+}
+
+.location .spawn {
+    font-size: 1.5vh;
+    text-align: right;
+    float: right;
+    margin-top: 8px;
+    padding: 1vh 5vh 1vh 5vh;
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: 3vh;
+    color: rgba(255, 255, 255);
+    transition: color 200ms;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+    border:2px solid white;
+}
+
+.location .spawn:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+.buttons {
+    z-index: 999;
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+    display: flex;
+}
+
+.locs-img {
+    width: 90px;
+    height: 90px;
+    animation: ghumo 3s ease-in-out infinite;
+}
+
+@keyframes ghumo {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+.buttons .button {
+    position: relative;
+    background-color: RGBA(53,49,53, 0.7);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    width: 7vh;
+    height: 7vh;
+    margin-right: 4vh;
+    transition: all 100ms;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow:    0px 0px 5px 0px rgba(0, 0, 0, 0.65);
+    box-shadow:         0px 0px 5px 0px rgba(0, 0, 0, 0.65);
+}
+
+.buttons .button i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.buttons .button:hover {
+    background-color: rgba(255, 255, 255, 0.65);
+}

@@ -1,0 +1,470 @@
+.twitter-app {
+    display: none; /* VERANDER NAAR NONE */
+    height: 100%;
+    width: 100%;
+    background: #20232a;
+    overflow: hidden;
+    font-family: 'Roboto Regular';
+}
+
+.twitter-loadscreen {
+    position: absolute;
+    top: 0;
+    left: 0vh;
+    display: none;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    color: #03A9F4;
+}
+
+.twitter-load-text {
+    display: none;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 29vh;
+    font-size: 3.5vh;
+    font-family: 'Roboto Bold';
+}
+
+.twitter-logo {
+    position: absolute;
+    width: 15vh;
+    margin: 0 auto;
+    left: 0vh;
+    right: 0;
+    top: 23.5vh;
+    z-index: 101;
+}
+
+.twitter-main {
+    /* display: none; */
+    /* padding-left: 30vh; */
+    display: block;
+}
+
+.twitter-navbar {
+    height: 9vh;
+    /* background-color: lawngreen; */
+}
+
+.twitter-navbar-logo {
+    display: block;
+    position: absolute;
+    width: 5.5vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 3vh;
+}
+
+.new-tweet-btn {
+    display: block;
+    position: absolute;
+    color: #ffffff;
+    right: 3vh;
+    top: 5vh;
+    transition: 0.1s ease-in-out;
+}
+
+.new-tweet-btn > i:hover {
+    color: #03A9F4;
+    transition: 0.1s ease-in-out;
+}
+
+.twitter-footer {
+    position: absolute;
+    bottom: 0.5vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 6vh;
+    width: 94%;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+    background-color: #2b2f38;
+
+}
+
+.twitter-footer-btn {
+    position: relative;
+    float: left;
+    width: 33.3%;
+    height: 100%;
+    text-align: center;
+    line-height: 6vh;
+    border-bottom: .3vh solid rgba(0, 0, 0, 0);
+    font-family: 'Roboto Regular';
+    color: #414e57;
+    transition: .1s;
+}
+
+.twitter-footer-btn:hover {
+    color: #03A9F4;
+    transition: .1s;
+}
+
+.twitter-footer-btn-selected {
+    color: #03A9F4;
+}
+
+.twitter-tweets {
+    display: block; /* VERANDER NAAR BLOCK */
+    position: absolute;
+    height: 77%;
+    width: 100%;
+    top: 8vh;
+    overflow: hidden;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+}
+
+.twitter-tweets::-webkit-scrollbar {
+    width: .7vh;
+}
+
+.twitter-tweets::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);
+}
+
+.twitter-tweets::-webkit-scrollbar-track {
+    background-color: #ebebeb00;
+}
+
+.twitter-tweet {
+    position: relative;
+    width: 92%;
+    left: 0.3vh;
+    right: 0;
+    margin: 1.5vh auto;
+    background-color: #2b2f38;
+    color: white;
+    border-radius: 10px;
+}
+
+.twitter-avatar {
+    position: relative;
+    width: 4vh;
+    top: 1.7vh;
+    left: 0.5vh;
+}
+
+.twitter-avatar-img {
+    width: 4vh;
+    height: 4vh;
+    border-radius: 100%;
+}
+
+.twitter-creator {
+    position: relative;
+    top: -2vh;
+    left: 5.5vh;
+}
+
+.twitter-tag {
+    position: absolute;
+    top: 1.8vh;
+    left: -0.1vh;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.1vh;
+}
+
+.twitter-message {
+    position: relative;
+    top: .5vh;
+    padding-left: 0.5vh;
+    padding-right: 0.5vh;
+    padding-bottom: 1.6vh;
+    font-size: 1.3vh;
+}
+
+.twitter-mentioned {
+    display: none;
+    position: absolute;
+    height: 77%;
+    width: 100%;
+    top: 8vh;
+    overflow: hidden;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+}
+
+.twitter-mentioned::-webkit-scrollbar {
+    width: .7vh;
+}
+
+.twitter-mentioned::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);
+}
+
+.twitter-mentioned::-webkit-scrollbar-track {
+    background-color: #ebebeb00;
+}
+
+.twitter-mentioned-tweet {
+    position: relative;
+    width: 92%;
+    left: 0.3vh;
+    right: 0;
+    margin: 1.5vh auto;
+    background-color: #2b2f38;
+    color: white;
+}
+
+.twitter-trending {
+    display: none; /* VERANDER NAAR NONE */
+    position: absolute;
+    height: 77%;
+    width: 100%;
+    top: 8vh;
+    overflow: hidden;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+}
+
+.twitter-trending::-webkit-scrollbar {
+    width: .7vh;
+}
+
+.twitter-trending::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);
+}
+
+.twitter-trending::-webkit-scrollbar-track {
+    background-color: #ebebeb00;
+}
+
+.twitter-hashtag {
+    position: relative;
+    width: 92%;
+    left: 0.3vh;
+    right: 0;
+    margin: 1.5vh auto;
+    background-color: #2b2f38;
+    color: white;
+    padding-bottom: 1vh;
+}
+
+.twitter-hashtag-status {
+    position: relative;
+    left: 0.5vh;
+    top: 0.5vh;
+    font-size: 1.2vh;
+    color: #7b8792;
+    font-family: 'Roboto light';
+}
+
+.twitter-hashtag-tag {
+    position: relative;
+    left: 0.5vh;
+    top: 0.5vh;
+    font-size: 1.5vh;
+    font-family:'Roboto Bold';
+}
+
+.twitter-hashtag-messages {
+    position: relative;
+    left: 0.5vh;
+    top: 0.5vh;
+    font-size: 1.2vh;
+    color: #7b8792;
+    font-family: 'Roboto light';
+}
+
+.twitter-new {
+    display: none;
+    position: absolute;
+    height: 77%;
+    width: 100%;
+    top: 62vh;
+    overflow: hidden;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+}
+
+.twitter-new::-webkit-scrollbar {
+    width: .7vh;
+}
+
+.twitter-new::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);
+}
+
+.twitter-new::-webkit-scrollbar-track {
+    background-color: #ebebeb00;
+}
+
+.twitter-new .twitter-avatar-img {
+    position: absolute;
+    left: 1vh;
+    width: 3vh;
+    height: 3vh;
+}
+
+#twitter-new-message-box {
+    position: absolute;
+    right: 0.5vh;
+    top: 1.5vh;
+    width: 22.5vh;
+    resize: none;
+    height: 80%;
+    background-color: transparent;
+    color: #769DAE;
+    border: none;
+    outline: none;
+}
+
+.close-new-tweet-btn {
+    display: none;
+    position: absolute;
+    color: #ffffff;
+    left: 3vh;
+    top: 5vh;
+    transition: 0.1s ease-in-out;
+}
+
+.close-new-tweet-btn:hover {
+    color: #03A9F4;
+    transition: 0.1s ease-in-out;
+}
+
+.new-tweet-send-btn {
+    display: none;
+    position: absolute;
+    color: #ffffff;
+    right: 2vh;
+    top: 4.2vh;
+    transition: 0.1s ease-in-out;
+    background: #03A9F4;
+    border-radius: 2vh;
+    transition: 0.1s ease-in-out;
+}
+
+.new-tweet-send-btn > p {
+    margin: 0 0.5vh 0 0.5vh ;
+    padding: 0.5vh;
+}
+
+.new-tweet-send-btn:hover {
+    color: #03A9F4;
+    background: #ffffff;
+    transition: 0.1s ease-in-out;
+}
+
+.new-tweet-send-btn2 {
+    display: none;
+    position: absolute;
+    color: #ffffff;
+    right: 2vh;
+    top: 50.2vh;
+    transition: 0.1s ease-in-out;
+    background: #03A9F4;
+    border-radius: 2vh;
+    transition: 0.1s ease-in-out;
+    z-index: 9999;
+}
+
+.new-tweet-send-btn2 > p {
+    margin: 0 0.5vh 0 0.5vh ;
+    padding: 0.5vh;
+}
+
+.new-tweet-send-btn2:hover {
+    color: #03A9F4;
+    background: #ffffff;
+    transition: 0.1s ease-in-out;
+}
+
+#tweet-new-url{
+    position: absolute;
+    border: none;
+    height: 5vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    color: white;
+    background-color: rgba(233, 233, 233, 0);
+    outline: none;
+    border-bottom: 2px solid #1da0f200;
+    resize: none;
+    transition: border-bottom 0.1s ease-in-out;
+    font-family: 'Heebo', sans-serif;
+    padding: 0.87vh;
+    font-size: 1.4vh;
+    top: 30vh;
+    width: 22vh;
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: inset 0 0 2vh 0 rgba(0, 0, 0, 0.089);
+    z-index: 999;  
+}
+
+
+.tt {
+    position: absolute;
+    right: 700px;
+    top: 400px;
+    padding: 1rem;
+}
+
+.twt-img {
+    position: absolute;
+    left: 1vh;
+    height: 100%;
+    width: 100%;
+}
+
+.twt-img > img {
+    width: 4vh;
+    height: 4vh;
+    border-radius: 50%;
+}
+
+.tweet-reply {
+
+    color: whitesmoke;
+    margin-left: 4vh;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    left: 2rem;
+    transition: .05 linear;
+    z-index: 100;
+    position: relative;
+    pointer-events: all;
+}
+
+.tweet-reply:hover i {
+    color: rgba(0, 0, 0, 1.0);
+}
+
+
+.heart {
+    position: absolute;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    left: 1rem;
+    width: 70px;
+    height: 70px;
+    background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    transition: background-position 1s steps(28);
+    transition-duration: 0s;
+    z-index: 9999999;
+}
+
+.heart.is-active {
+    transition-duration: 1s;
+    background-position: -2800px 0;
+}
+
+.stage {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 9999999;
+}

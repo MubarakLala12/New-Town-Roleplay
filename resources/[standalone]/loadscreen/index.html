@@ -1,0 +1,80 @@
+<html>
+ <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="config.css" type="text/css">
+        <link rel="stylesheet" href="stylesheet.css" type="text/css">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+ </head>
+ <body>
+        <h1 class="enable_music">Initializing VirusFW - OmFW</h1>
+
+        <div class='blur' id="bg"></div>
+
+        <div id="container">
+            <!--<img style="width: 450px; height: 450px;" class="logo" src="imgs/logo.gif"></img>-->
+			<br>
+
+		</div>
+		<div class="loadbar">
+			<div class="yeet"></div>
+		</div>
+    <br>
+    <!--<h1 class="teamspeak"><strong>virus.com</strong> | <strong>discord.gg/virus</strong></h1>-->
+   <!--<div class="lds-ripple"><div></div><div></div></div>-->
+
+    <script>
+      var config = {
+        progressBars:
+        {
+            "INIT_CORE": {
+                enabled: false,
+            },
+
+            "INIT_BEFORE_MAP_LOADED": {
+                enabled: true,
+            },
+
+            "MAP": {
+                enabled: true,
+            },
+
+            "INIT_AFTER_MAP_LOADED": {
+                enabled: true,
+            },
+
+            "INIT_SESSION": {
+                enabled: true,
+            }
+        }
+      }
+    </script>
+
+    <script src="js/app.js"></script>
+	  <script src="js/progressbar-main.js"></script>
+    <script src="js/progressbar-handler.js"></script>
+    <script src="js/progressbar-renderer.js"></script>
+    <script>
+        // Wrap every letter in a span
+        var textWrapper = document.querySelector('.enable_music');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({loop: true})
+        .add({
+            targets: '.enable_music .letter',
+            opacity: [0,1],
+            easing: "easeInOutQuad",
+            duration: 2250,
+            delay: (el, i) => 5 * (i+1)
+        }).add({
+            targets: '.enable_music',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: 1000
+        });
+        </script>
+ </body>
+</html>

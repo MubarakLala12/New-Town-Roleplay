@@ -1,0 +1,15 @@
+a_m_m_acult_01:Altruist Cult
+csb_anita:Anita Mendoza
+s_m_y_armymech_01:Army Mechanic
+a_c_cat_01:Cat
+a_c_husky:Husky
+a_c_pug:Pug
+a_c_mtlion:Lion
+child:Child
+Chimp:Chimp
+Chimpanzee:Chimpanzee
+Gorilla:King Kong
+wick2:John Wick
+a_c_shepherd:Police K9
+Alien:Alien
+mk02:Girl Child

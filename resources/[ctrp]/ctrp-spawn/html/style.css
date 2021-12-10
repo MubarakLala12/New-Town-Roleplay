@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Bebas Neue');
+
+.container {
+    display:block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(https://cdn.discordapp.com/attachments/699953862706200577/876054802939920434/nobby.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0);
+    box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.54);
+    text-align: center;
+    color: white;
+    font-family: 'Bebas Neue';
+    overflow:hidden;
+}
+
+.tattikhao{
+    background-color:rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.shadow {
+    position: fixed;
+    box-shadow:100px 100px 800px 200px rgba(0, 0, 0, 0.8) inset; 
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+ 
+.spawn-locations {
+    position: absolute;
+    bottom: 30vh;
+    left: 16%;
+    width: 100%;
+}
+
+.location {
+    background-color: #ffffff00;
+    width: 15vh;
+    height: 9vh;
+    margin: auto;
+    margin-bottom: .75vh;
+    transition: 0.2s;
+    border-radius: 1%;
+    float: left;
+    margin-top: 2vh;
+    margin-left: 5vh;
+    z-index: 999;
+    display: inline-block;
+    padding: 1%;
+}
+
+.location > p {
+    font-family: 'Bebas Neue';
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: auto;
+    font-size: 2.0vh;
+    padding-top: 30%;
+}
+
+.location:hover {
+    border-radius: 1%;
+    border-bottom: 2px solid white;
+}
+
+.selected {
+    background-color:#ffffff00;  
+    border-bottom: 2px solid white;
+}
+
+.submit-spawn {
+    width: auto;
+    height: auto;
+    transition: 0.2s;
+    border-radius: 1%;
+    position: absolute;
+    left:30%;
+    top:120%;
+    color: white;
+}
+
+.submit-spawn > p {
+    font-family: 'Bebas Neue';
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: auto;
+    font-size: 2.0vh;
+    padding-top: 30%;
+}
+
+.submit-spawn:hover {
+    color: white;
+    transition: 0.2s;
+    border-radius: 1%;
+}
+
+.submit-spawn >p:hover {
+    color: white;
+}
+
+#spawn-label {
+    font-weight: bold;
+}
+
+#joyzzchutiya{
+    width: 150px;
+    height:150px;
+    position: absolute;
+    left:32%;
+    top:120%;
+}
+
+#joyzzchutiya:hover{
+    transition: 1s all ease-in-out;
+    width: 160px;
+    height:160px;
+    position: absolute;
+    left:30%;
+    top:120%;
+}
+.loclabel {
+    width: auto;
+    height: 4.5vh;
+    margin-bottom: 1vh;
+    transition: 0.2s;
+    z-index: 999;
+}
+
+.loclabel > p {
+    font-family: 'Bebas Neue';
+    letter-spacing: 1px;
+    position: relative;
+    color: white;
+    line-height: 4.5vh;
+    font-size: 60px;   
+}

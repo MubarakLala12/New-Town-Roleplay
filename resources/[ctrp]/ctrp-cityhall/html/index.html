@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <script>
+       
+        function garbagecoll() {
+
+            var x = document.getElementById("cityhall-job-info");   // Get the element with id="demo"
+            x.style.display = "block";    
+
+          document.getElementById("jobname").innerHTML = "Garbage collector";
+          document.getElementById("detail-job").innerHTML = "A garbage collector is someone who works either for the municipal government or for a private waste management company. Garbage collectors usually work in pairs, picking up and removing waste, recyclable goods, or yard debris from residential neighbourhoods, commercial business centres, and public parks";
+          document.getElementById("salary-job").innerHTML = "Salary $80";
+
+          const img = document.getElementById("canvas");
+          img.src = "https://cdn.discordapp.com/attachments/853376112767270963/880808109122150420/Desktop_Screenshot_2021.08.27_-_19.02.47.08_copy.png";
+
+        }
+
+        function ama() {
+
+            var x = document.getElementById("cityhall-job-info");   // Get the element with id="demo"
+            x.style.display = "block";    
+
+            document.getElementById("jobname").innerHTML = "Amazon Delivery";
+            document.getElementById("detail-job").innerHTML = "An Amazon delivery driver is responsible for optimizing customer satisfaction by transporting and delivering goods, merchandise, and/or other items in a safe and timely manner.His/her job description entails picking up, transporting, and dropping off packages and small shipments within a local region or urban area.In other words, an Amazon delivery driver refers to one whose profession is to deliver packages to homes, retail locations, and other delivery destinations while adhering strictly to delivery driving routes and time schedules for the Amazon company.";
+            document.getElementById("salary-job").innerHTML = "Salary $100";
+
+            const img = document.getElementById("canvas");
+            img.src = "https://cdn.discordapp.com/attachments/853376112767270963/880814038634885140/Desktop_Screenshot_2021.08.27_-_19.02.47.08_copy.PNG";
+
+        }
+
+        function taxii() {
+
+            var x = document.getElementById("cityhall-job-info");   // Get the element with id="demo"
+            x.style.display = "block";    
+
+            document.getElementById("jobname").innerHTML = "Taxi Driver";
+            document.getElementById("detail-job").innerHTML = "Friendly, well-groomed applicants with clean driving records are the most sought-after candidates for taxi driver positions. Candidates with schedule flexibility are preferred, as 12-hour shifts, night, holiday, and weekend work are often required. Flexibility to travel is a plus as well, as trips outside the city of employment are made occasionally. There are no formal education requirements for taxi drivers; however, the position does have minimum age requirements that vary from state to state. This age requirement ranges from 21 – 26. Drivers are also required to be licensed in the state in which he or she will be driving, and motor vehicle records are checked for violations. The preference is for applicants with a two to five-year period of no violations, based on the state of employment.";
+            document.getElementById("salary-job").innerHTML = "Salary $100";
+
+            const img = document.getElementById("canvas");
+            img.src = "https://cdn.discordapp.com/attachments/853376112767270963/880819347529007104/Desktop_Screenshot_2021.08.27_-_19.02.47.08_copy.PNG";
+
+        }
+
+        function unm() {
+
+            var x = document.getElementById("cityhall-job-info");   // Get the element with id="demo"
+            x.style.display = "block";    
+
+            document.getElementById("jobname").innerHTML = "Unemployed";
+            document.getElementById("detail-job").innerHTML = "Unemployment is a term referring to individuals who are employable and actively seeking a job but are unable to find a job. Included in this group are those people in the workforce who are working but do not have an appropriate job.";
+            document.getElementById("salary-job").innerHTML = "Salary $40";
+
+            const img = document.getElementById("canvas");
+            img.src = "https://akm-img-a-in.tosshub.com/businesstoday/images/story/202106/unemployed_1200_040621014111.jpg?size=1200:675";
+
+        }
+
+        
+        
+       
+    </script>
+
+    <title>CTRP Cityhall</title>
+</head>
+    <body>
+        <div class="container">
+            <img src="https://cdn.freebiesupply.com/logos/large/2x/department-of-justice-logo-png-transparent.png" alt="header-logo" class="header-logodoj">
+            <h1 id="city-h1"> CITY HALL</h1><br>
+            <p id="job-centre"> JOB CENTRE</p>
+
+            <h3 id="choose-job"> Choose Your Job</h3>
+
+            <div class="job-page-blocks">
+                <div class="job-page-block" data-job="unemployed" onclick="unm()"><p>Unemployed</p></div>
+                <div class="job-page-block" data-job="trucker" onclick="ama()"><p>Delivery</p></div>
+                <div class="job-page-block" data-job="taxi" onclick="taxii()"><p>Taxi driver</p></div>
+                <div class="job-page-block" data-job="garbage" onclick="garbagecoll()"><p>Garbage collector</p></div>
+               <!--<div class="job-page-block" data-job="postal"><p>Postal OP</p></div> -->
+            </div>
+            
+            <div id="cityhall-job-info">
+               <!-- onmousemove="virusop()" onmouseout="backvirus()-->
+               <h1 id="jobname">JOB INFO</h1>
+               <p id="detail-job">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+               <img src="" alt="canvas" id="canvas">
+               <h2 id="salary-job"> Salary $0</h2>
+
+               <div class="apply-job-button"><p>Take a job!</p></div>
+           
+            </div>
+
+             <!-- <div class="cityhall-main-container">
+                <div class="cityhall-header">
+                    <img src="./img/header-logo.png" alt="header-logo" class="header-logo">
+                </div>
+
+                <div class="cityhall-option-blocks">
+                    <div class="cityhall-option-block"  data-page="identity"><i class="fas fa-passport"></i><p>Identity</p></div>
+                    <div class="cityhall-option-block"  data-page="job"><i class="fas fa-user-tie"></i><p>Employment agency</p></div>
+                </div>
+
+                <div class="cityhall-identity-page">
+                    <div class="identity-page-blocks">
+                       <div class="identity-page-block" data-type="rijbewijs" onmouseover="hoverDescription('rijbewijs')" onmouseout="hoverDescription('rijbewijs')"><p>Rijbewijs</p></div>
+                    </div>
+
+                    <div class="hover-description">
+
+                    </div>
+
+                    <div class="request-identity-button"></div>
+
+                    <div class="back-to-main"><p>Back</p></div>
+                </div>
+
+                <div class="cityhall-job-page">
+                    <div class="job-page-blocks">
+                        <div class="job-page-block" data-job="unemployed"><p>Unemployed</p></div>
+                        <div class="job-page-block" data-job="trucker"><p>Delivery</p></div>
+                        <div class="job-page-block" data-job="taxi"><p>Taxi driver</p></div>
+                        <div class="job-page-block" data-job="garbage"><p>Garbage collector</p></div>
+                       <div class="job-page-block" data-job="postal"><p>Postal OP</p></div> 
+                    </div>
+
+                    <div class="apply-job-button"><p>Take a job!</p></div>
+
+                    <div class="back-to-main"><p>Back</p></div>
+                </div>
+            </div> -->
+        </div>
+    </body>
+    <script src="./app.js"></script>
+</html>

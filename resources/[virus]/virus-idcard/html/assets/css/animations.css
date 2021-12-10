@@ -1,0 +1,31 @@
+@keyframes loadingSpinner {
+    0%     {transform: rotate(45deg); border-radius: 12px;}
+    12.5%  {transform: rotate(90deg); border-radius: 50%;}
+    25%    {transform: rotate(135deg); border-radius: 12px;}
+    37.5%  {transform: rotate(180deg); border-radius: 50%;}
+    50%    {transform: rotate(225deg); border-radius: 12px;}
+    62.5%  {transform: rotate(270deg); border-radius: 50%;}
+    75%    {transform: rotate(315deg); border-radius: 12px;}
+    87.5%  {transform: rotate(360deg); border-radius: 50%;}
+    100%   {transform: rotate(405deg); border-radius: 12px;}
+}
+
+@keyframes loadingTextAnim {
+    0%   {content: 'Loading.';}
+    50%  {content: 'Loading..';}
+    100% {content: 'Loading...';}
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 0px) rotate(0deg, 0deg);}
+  10% { transform: translate(-1px, 0px) rotate(1deg);}
+  20% { transform: translate(-3px, 0px) rotate(-3deg);}
+  30% { transform: translate(3px, 0px) rotate(1deg);}
+  40% { transform: translate(1px, 0px) rotate(-1deg);}
+  50% { transform: translate(-1px, 0px) rotate(-1deg);}
+  60% { transform: translate(-3px, 0px) rotate(2deg);}
+  70% { transform: translate(3px, 0px) rotate(-2deg);}
+  80% { transform: translate(-1px, 0px) rotate(1deg);}
+  90% { transform: translate(1px, 0px) rotate(-3deg);}
+  100% { transform: translate(1px, 0px) rotate(0deg);}
+}

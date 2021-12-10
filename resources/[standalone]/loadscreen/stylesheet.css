@@ -1,0 +1,461 @@
+:root {
+    --background-contrast: 95%;
+    --background-blur: 3px;
+    --loadbar-color: #ffffff5b;
+    --loadbar-progress-color: white;
+    --loadbar-height: 10px;
+    --footer-font-color: #dfdfdf98;
+    --footer-font-size: 24px;
+    --fadeTo-Color: #222222;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Lato');
+
+
+* {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url('imgs/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.blur {
+    -webkit-filter: blur(var(--background-blur)) contrast(var(--background-contrast));
+    filter: blur(var(--background-blur)) contrast(var(--background-contrast));
+}
+
+.logo {
+    width: 253px;
+    height: 253px;
+}
+
+.loadbar {
+    border-radius: 5px;
+    width: 100%;
+    background-color: var(--loadbar-color);
+    height: var(--loadbar-height);
+
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+    overflow: hidden;
+
+    position: absolute;
+    top: 100%;
+    margin-top: -5vh;
+    margin-left: -25vw;
+    width: 140%;
+  
+    
+    display: block;
+}
+
+.yeet {
+    width: 0%;
+    border-radius: 5px;
+    background-color: var(--loadbar-progress-color);
+    height: var(--loadbar-height);
+
+    transition: 500ms;
+
+    position: absolute;
+    left: 0%;
+}
+
+#container {
+    text-shadow: 2px 2px 5px #424242;
+    position: absolute;
+    color: rgb(241, 235, 235);
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 75px;
+    text-align: center;
+}
+
+#bg { 
+  -webkit-background-size: cover;
+  background-size: cover;
+   }
+
+#link {
+    color: var(--footer-font-color);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-size: var(--footer-font-size);
+    width: 100%;
+    text-align: center;
+    padding-bottom: 29px;
+}
+
+#bottom_nav {
+    width: 90%;
+    vertical-align: text-bottom;
+    position: fixed;
+    bottom:0px;
+    text-align: center;
+    z-index:9999;
+}
+
+.enable_music {
+    color: #e7e7e7;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+ 
+
+    margin: 50px auto;
+    animation: music 3s;
+    position: absolute;
+    top:630px;
+    left: 800px;
+    
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.teamspeak {
+    color: #e7e7e7;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+
+    font-size: 15px;
+    letter-spacing: 2px;
+
+    font-weight: 400;
+
+    margin: 50px auto;
+    animation: music 3s;
+	margin-left: 0px;
+    margin-top: 38%;
+}
+.dev {
+    color:#ff00b3;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    font-weight: 400;
+
+    margin: 50px auto;
+    animation: music 3s;
+	margin-left: 0px;
+	margin-top: 1%;
+}
+
+
+.lds-ripple {
+    display: inline-block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top:650px;
+    left: 750px;
+  }
+  .lds-ripple div {
+    position: absolute;
+    border: 4px solid #fff;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+  .lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+  }
+ 
+  @keyframes lds-ripple {
+    0% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+      width: 72px;
+      height: 72px;
+      opacity: 0;
+    }
+  }
+
+@media(max-width:1880px){
+
+    .lds-ripple {
+        display: inline-block;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        top:600px;
+        left:680px;
+    }
+
+    .enable_music {
+        color: #e7e7e7;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+    
+        font-size: 15px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    
+     
+    
+        margin: 50px auto;
+        animation: music 3s;
+        position: absolute;
+        top:580px;
+        left: 720px;
+        
+    }
+    
+}
+
+@media(max-width:1690px){
+
+    .lds-ripple {
+        display: inline-block;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        top:560px;
+        left:600px;
+    }
+
+    .enable_music {
+        color: #e7e7e7;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+    
+        font-size: 15px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    
+     
+    
+        margin: 50px auto;
+        animation: music 3s;
+        position: absolute;
+        top:540px;
+        left: 670px;
+        
+    }
+    
+}
+  
+
+@media(max-width:1610px){
+
+    .lds-ripple {
+        display: inline-block;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        top:540px;
+        left:580px;
+    }
+
+    .enable_music {
+        color: #e7e7e7;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+    
+        font-size: 15px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    
+     
+    
+        margin: 50px auto;
+        animation: music 3s;
+        position: absolute;
+        top:520px;
+        left: 630px;
+        
+    }
+    
+}
+
+@media(max-width:1450px){
+
+    .lds-ripple {
+        display: inline-block;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        top:500px;
+        left:500px;
+    }
+
+    .enable_music {
+        color: #e7e7e7;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+    
+        font-size: 15px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    
+     
+    
+        margin: 50px auto;
+        animation: music 3s;
+        position: absolute;
+        top:480px;
+        left: 550px;
+        
+    }
+    
+}
+
+@media(max-width:1410px){
+
+    .lds-ripple {
+        display: inline-block;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        top:480px;
+        left:480px;
+    }
+
+    .enable_music {
+        color: #e7e7e7;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+    
+        font-size: 15px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    
+     
+    
+        margin: 50px auto;
+        animation: music 3s;
+        position: absolute;
+        top:460px;
+        left: 530px;
+        
+    }
+    
+}
+
+@media(max-width:1366px){
+
+    .lds-ripple {
+        display: inline-block;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        top:460px;
+        left:460px;
+    }
+
+    .enable_music {
+        color: #e7e7e7;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+    
+        font-size: 15px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    
+     
+    
+        margin: 50px auto;
+        animation: music 3s;
+        position: absolute;
+        top:440px;
+        left: 510px;
+        
+    }
+    
+}
+
+@media(max-width:1300px){
+
+    .lds-ripple {
+        display: inline-block;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        top:440px;
+        left:440px;
+    }
+
+    .enable_music {
+        color: #e7e7e7;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+    
+        font-size: 15px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    
+     
+    
+        margin: 50px auto;
+        animation: music 3s;
+        position: absolute;
+        top:420px;
+        left: 490px;
+        
+    }
+    
+}
+
+@media(max-width:1200px){
+
+    .lds-ripple {
+        display: inline-block;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        top:420px;
+        left:420px;
+    }
+
+    .enable_music {
+        color: #e7e7e7;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+    
+        font-size: 15px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    
+     
+    
+        margin: 50px auto;
+        animation: music 3s;
+        position: absolute;
+        top:400px;
+        left: 470px;
+        
+    }
+    
+}
+
+
+  
+  
+  

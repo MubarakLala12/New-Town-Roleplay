@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+.garage-app {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    
+    overflow: hidden;
+}
+
+.garage-app-header {
+    position: absolute;
+    height: 30vh;
+    width: 100%;
+    background-color: #000000;
+    background-image: url(https://cdn.discordapp.com/attachments/826905911234527232/879113549664899122/1179676.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    line-height: 12.5vh;
+    color: white;
+    font-family: 'Roboto Medium';
+    font-size: 2.5vh;
+    border-radius:30px;
+   /* border-bottom: 1.1px solid rgb(219, 219, 219);*/
+}
+
+#ghuugarage{
+    position: absolute;
+    top: 68%;
+    left:26%
+}
+
+.garage-homescreen {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0vh;
+}
+
+.garage-detailscreen {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: -30vh;
+    background: rgb(0, 0, 0);
+    background-image: url(https://cdn.discordapp.com/attachments/826905911234527232/879126012200362044/01a03f76252723f651dee2cab79b0b0f.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #383838; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+.garage-vehicles {
+    position: absolute;
+    width: 85%;
+    height: 44.5vh;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    top: 31.5vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+
+    overflow-y: scroll;
+}
+
+.garage-vehicles::-webkit-scrollbar {
+    display: none;
+}
+
+.garage-vehicle {
+    position: relative;
+    height: 5vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    /*box-shadow: 0 0 1vh .1vh rgba(0, 0, 0, 0.15);*/
+    border: 1px solid rgba(255, 255, 255, 0.829);
+    border-radius: 2vh;
+    transition: .08s linear;
+    margin-bottom: 1vh;
+}
+
+.garage-vehicle-firstletter {
+    position: relative;
+    line-height: 5vh;
+    left: 1.2vh;
+    background-color: #00000000;
+    background-image:url(https://cdn.discordapp.com/attachments/826905911234527232/879119607540105236/lol_copy.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 1.1vh;
+    padding-bottom: 1.1vh;
+    padding-left: 1.6vh;
+    padding-right: 1.6vh;
+    border-radius: 50%;
+    color: white;
+    font-family: 'Samsung Sans Bold';
+    font-size: 0vh;
+    transition: .05s linear;
+}
+
+.garage-vehicle:hover {
+    background-color: rgb(255, 255, 255);
+    color:black
+}
+
+
+
+.garage-vehicle-name {
+    position: absolute;
+    left: 5vh;
+    line-height: 5vh;
+    color:rgb(170, 170, 170);
+    font-family: 'Roboto Medium';
+}
+
+.garage-vehicle-name:hover {
+    position: absolute;
+    left: 5vh;
+    color:rgb(0, 0, 0);
+    line-height: 5vh;
+    font-family: 'Roboto Medium';
+}
+
+.garage-cardetails {
+    position: absolute;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    height: 76%;
+    width: 84%;
+    margin: 0 auto;
+    left: 0vh;
+    right: 0;
+    top: 11vh;
+    overflow:auto;
+    border-radius: 5px;
+
+}
+
+.vehicle-brand {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    padding: .8vh;
+    color: white;
+    font-family: 'Roboto Medium';
+    border-bottom: .1vh solid #fff;
+    margin-bottom: 1vh;
+    font-size: 1.0vh;
+}
+
+.vehicle-model {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    padding: .8vh;
+    color: white;
+    font-family: 'Roboto Medium';
+    border-bottom: .1vh solid #fff;
+    margin-bottom: 1vh;
+    font-size: 1.0vh;
+}
+
+.vehicle-plate {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    padding: .8vh;
+    color: white;
+    font-family: 'Roboto Medium';
+    border-bottom: .1vh solid #fff;
+    margin-bottom: 1vh;
+    font-size: 1.0vh;
+}
+
+.vehicle-garage {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    padding: .8vh;
+    color: white;
+    font-family: 'Roboto Medium';
+    border-bottom: .1vh solid #fff;
+    margin-bottom: 1vh;
+    font-size: 1.0vh;
+}
+
+.vehicle-status {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    padding: .8vh;
+    color: white;
+    font-family: 'Roboto Medium';
+    border-bottom: .1vh solid #fff;
+    margin-bottom: 1vh;
+    font-size: 1.0vh;
+}
+
+.vehicle-fuel {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    padding: .8vh;
+    color: white;
+    font-family: 'Roboto Medium';
+    border-bottom: .1vh solid #fff;
+    margin-bottom: 1vh;
+    font-size: 1.0vh;
+}
+
+.vehicle-engine {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    padding: .8vh;
+    color: white;
+    font-family: 'Roboto Medium';
+    border-bottom: .1vh solid #fff;
+    margin-bottom: 1vh;
+    font-size: 1.0vh;
+}
+
+.vehicle-body {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    padding: .8vh;
+    color: white;
+    font-family: 'Roboto Medium';
+    border-bottom: .1vh solid #fff;
+    margin-bottom: 1vh;
+    font-size: 1.0vh;
+}
+
+.vehicle-finance {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    padding: .8vh;
+    color: white;
+    font-family: 'Roboto Medium';
+    border-bottom: .1vh solid #fff;
+    margin-bottom: 1vh;
+    font-size: 1.0vh;
+}
+
+.vehicle-repayam {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    padding: .8vh;
+    color: white;
+    font-family: 'Roboto Medium';
+    border-bottom: .1vh solid #fff;
+    margin-bottom: 1vh;
+    font-size: 1.0vh;
+}
+
+.vehicle-repay {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    padding: .8vh;
+    color: white;
+    font-family: 'Roboto Medium';
+    border-bottom: .1vh solid #fff;
+    margin-bottom: 1vh;
+    font-size: 1.0vh;
+}
+
+.vehicle-total {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    padding: .8vh;
+    color: white;
+    font-family: 'Roboto Medium';
+    border-bottom: .1vh solid #fff;
+    margin-bottom: 1vh;
+    font-size: 1.0vh;
+}
+
+.vehicle-date {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    padding: .8vh;
+    color: white;
+    font-family: 'Roboto Medium';
+    border-bottom: .1vh solid #fff;
+    margin-bottom: 1vh;
+    font-size: 1.0vh;
+}
+
+.vehicle-fdate {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    padding: .8vh;
+    color: white;
+    font-family: 'Roboto Medium';
+    border-bottom: .1vh solid #fff;
+    margin-bottom: 1vh;
+    font-size: 1.0vh;
+}
+
+.vehicle-answer {
+    float: right;
+    font-size: 1.1vh;
+}
+
+.garage-cardetails-footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 2vh;
+    background-color: rgb(233, 233, 233);
+    border-radius: .3vh;
+    transition: .05s linear;
+    text-align: center;
+    line-height: 2vh;
+    font-family: 'Samsung Sans Bold';
+    font-size: 1.0vh;
+
+}
+
+.garage-cardetails-footer:hover {
+    background-color: rgb(212, 212, 212);
+}

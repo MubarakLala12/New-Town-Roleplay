@@ -1,0 +1,240 @@
+.bank-app {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: #f8f9fd;
+    overflow: hidden;
+}
+
+.bank-app-loaded {
+    /* display: none;
+    padding-left: 30vh; */
+    display: block;
+    padding-left: 0vh;
+}
+
+.bank-app-header {
+    position: absolute;
+    background-color: #181a6f;
+    color: white;
+    height: 16vh;
+    width: 100%;
+}
+
+.bank-app-header > p {
+    position: absolute;
+    font-family: 'Roboto Regular';
+    font-size: 1.2vh;
+    top: 5vh;
+    left: 2vh;
+}
+
+.bank-app-bestedingsruimte {
+    position: absolute;
+    font-family: 'Roboto Medium';
+    font-size: 2vh;
+    top: 7vh;
+    left: 2vh;
+}
+
+.bank-app-accounts {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    /* background-color: #353b48; */
+    top: 13vh;
+    left: 0vh;
+}
+
+.bank-app-account {
+    position: absolute;
+    background-image: linear-gradient(to right, #0056b0, #3553c0, #5d4bcc, #853bd2, #ac14d1);
+    height: 13vh;
+    width: 80%;
+    border-radius: 1.5vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    color: white;
+    top: -1vh;
+    font-family: 'Roboto Light';
+    z-index: 2;
+}
+
+.bank-app-account::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: -10px;
+    left: 2%;
+    height: 80%;
+    width: 95%;
+    opacity: 0.7;
+    border-radius: 25px;
+    
+    /* Declaring our shadow color inherit from the parent (button) */
+    background: inherit;
+    
+    /* Blurring the element for shadow effect */
+    -webkit-filter: blur(6px);
+    -moz-filter: blur(6px);
+    -o-filter: blur(6px);
+    -ms-filter: blur(6px);
+    filter: blur(6px);
+    
+    /* Transition for the magic */
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.bank-app-account-mastercard {
+    position: relative;
+    left: 1.5vh;
+    top: 2vh;
+}
+
+.mastercard-icon {
+    display: inline-block;
+    height: 2em;
+    isolation: isolate;
+    position: relative;
+    line-height: 2em;
+    vertical-align: middle;
+    width: 3.2em;
+  }
+  
+  .mastercard-icon::before,
+  .mastercard-icon::after {
+    border-radius: 1.5em;
+    content: "";
+    display: inline-block;
+    height: 2em;
+    position: absolute;
+    width: 2em;
+  }
+  
+  .mastercard-icon::before {
+    background-color: #eb001b;
+    left: 0;
+    top: 0;
+  }
+  
+  .mastercard-icon::after {
+    background-color: #f79e1b;
+    mix-blend-mode: hard-light;
+    right: 0;
+    top: 0;
+  }
+
+.bank-app-account-number {
+    position: relative;
+    text-align: center;
+    top: 3.5vh;
+    letter-spacing: 0.15vh;
+}
+
+.bank-app-account-owner {
+    position: relative;
+    left: 1.8vh;
+    top: 4vh;
+    letter-spacing: 0.05vh;
+}
+
+.bank-app-recente-accounts-transactions-list::-webkit-scrollbar {
+    display: none;
+}
+
+
+.bank-app-recente-accounts-transactions-list {
+    position: absolute;
+    height: 44%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 29vh;
+    overflow-y: scroll;
+}
+
+.bank-app-my-recent-contact {
+    position: relative;
+    margin: 1vh auto;
+    left: 0;
+    right: 0;
+    width: 80%;
+    height: 4.5vh;
+    margin-top: .1vh;
+    background-color: #ffffff;
+    border-radius: 1.5vh;
+    transition: .1s;
+    box-shadow:  8px 8px 22px #e4e4e4, 
+             8px -8px 22px #ffffff;
+}
+
+.bank-app-my-recent-avatar {
+    position: absolute;
+    background-image:url('https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/downloads/buddyiconsconavatars/v_casino_heist1_256x256.jpg'); 
+    background-size: contain;
+    height: 3.5vh;
+    width: 3.5vh;
+    margin: .4vh;
+    margin-left: .35vh;
+    text-align: center;
+    line-height: 3.6vh;
+    border-radius: 1.5vh;
+    font-family: 'Roboto Bold';
+    color: white;
+}
+
+.bank-app-my-recent-name {
+    position: absolute;
+    left: 5vh;
+    line-height: 4.5vh;
+    font-family: 'Roboto Medium';
+    font-size: 1.4vh;
+    color: #181a6f;
+}
+
+.bank-app-bottom-menu {
+    position: absolute;
+    height: 7vh;
+    background-color: #ffffff;
+    width: 100%;
+    bottom: 0;
+    z-index: 2;
+    box-shadow:  -8px -8px 22px #e9e9e9;
+             /* 8px 8px 22px #ffffff; */
+}
+
+.bank-app-bottom-button {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    line-height: 6vh;
+    border-bottom: .3vh solid rgba(0, 0, 0, 0);
+    font-family: 'Roboto Regular';
+    color: lightgray;
+    transition: .08s;
+}
+
+.bank-app-bottom-button-selected {
+    color: #181a6f;
+}
+.bank-app-bottom-button > i {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: .9vh;
+    font-size: 2vh;
+}
+.bank-app-bottom-button > p {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 1.4vh;
+    font-size: 1.25vh;
+}

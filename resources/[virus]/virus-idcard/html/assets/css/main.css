@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Bebas Neue');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('http://fonts.cdnfonts.com/css/brittany-signature');
+
+* {
+  margin: 0;
+  padding: 0;
+  left: 70%;
+  top:55%;
+  right: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+  user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #383838; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+#virus-idcardop {
+  position: absolute;
+  width: 400px;
+  height: 250px;
+  display: none;
+  margin: 50px auto 0 auto;
+  border-radius: 6px;
+  overflow: hidden;
+  /*background: #0E0E0E;*/
+  background-image: url(https://cdn.discordapp.com/attachments/853376112767270963/878370991120732260/idcard.png);
+  border: 2px solid rgb(0, 0, 0);
+}
+
+#virus-idcardop h3 {
+  color:white;
+  padding-top: 2%;
+  padding-left: 2%;
+
+}
+
+#close-btn{
+  position: absolute;
+  left:96%;
+  top:-2%;
+  background-color: none;
+  color: white;
+  font-size:18px;
+  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  z-index: 99999999;
+}
+
+.idcard-detail{
+  color: black;
+  margin-top: 15%;
+  margin-left: 35%;
+}
+
+#name{
+
+  font-family: 'Oswald', sans-serif;
+  font-size:25px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+
+}
+
+#signature{
+
+  font-family: 'Brittany Signature', sans-serif;
+  font-size:25px;
+
+  
+}
+
+#photo{
+  position: absolute;
+  top:20%;
+  left: 2%;
+  width:120px;
+  height: 150px;
+  /*background-color: #383838;*/
+}
+
+#canvas{
+  position: absolute;
+  top:25%;
+  left: 2%;
+  width:120px;
+  height: 120px;
+  z-index:99999999;
+  border: 1px solid black;
+  /*background-color: #383838;*/
+}
+
+
+
+
+#virus-idcardop2 {
+  position: absolute;
+  width: 400px;
+  height: 250px;
+  display: none;
+  margin: 50px auto 0 auto;
+  border-radius: 6px;
+  overflow: hidden;
+  /*background: #0E0E0E;*/
+  background-image: url(https://cdn.discordapp.com/attachments/767625711833317397/878418169172217916/driver.png);
+  border: 2px solid rgb(0, 0, 0);
+}
+
+#virus-idcardop2 h3 {
+  color:white;
+  padding-top: 2%;
+  padding-left: 2%;
+
+}
+
+#close-btn2{
+  position: absolute;
+  left:96%;
+  top:-2%;
+  background-color: none;
+  color: white;
+  font-size:18px;
+  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  z-index: 999999999;
+}
+
+.idcard-detail2{
+  color: black;
+  margin-top: 15%;
+  margin-left: 35%;
+}
+
+#name2{
+
+  font-family: 'Oswald', sans-serif;
+  font-size:25px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+
+}
+
+#signature2{
+
+  font-family: 'Brittany Signature', sans-serif;
+  font-size:25px;
+
+  
+}
+
+#photo2{
+  position: absolute;
+  top:20%;
+  left: 2%;
+  width:120px;
+  height: 150px;
+  /*background-color: #383838;*/
+}
+
+#canvas2{
+  position: absolute;
+  top:25%;
+  left: 2%;
+  width:120px;
+  height: 120px;
+  z-index:99999999;
+  border: 1px solid black;
+  /*background-color: #383838;*/
+}
+
+

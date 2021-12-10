@@ -1,0 +1,225 @@
+.advertentie-app {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.advertenties {
+    position: relative;
+    top: 0vh;
+}
+
+.advertentie-header {
+    display: block;
+    height: 12vh;
+    width: 100%;
+    background: rgb(3,49,177);
+    background: -moz-linear-gradient(45deg, rgba(3,49,177,1) 0%, rgba(0,119,242,1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(3,49,177,1) 0%, rgba(0,119,242,1) 100%);
+    background: linear-gradient(45deg, rgba(3,49,177,1) 0%, rgba(0,119,242,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0331b1",endColorstr="#0077f2",GradientType=1);
+}
+
+.advertentie-header > P {
+    position: absolute;
+    top: 5vh;
+    left: 2vh;
+    font-family: 'Roboto Medium';
+    font-size: 2vh;
+    color: #ffffff;
+}
+
+.advertentie-add-btn {
+    position: absolute;
+    color: #ffffff;
+    right: 2vh;
+    top: 5vh;
+    font-size: 2vh;
+    border: 2px solid rgba(228, 228, 228, 0.8);
+    border-radius: 1vh;
+    transition: 0.3s;
+}
+
+.advertentie-add-btn > i {
+    padding: 0.5vh;
+}
+
+.advertentie-add-btn:hover {
+    background-color: white;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    color: #0081f8;
+    border-radius: 1vh;
+}
+
+.advertentie-lijst {
+    position: absolute;
+    width: 99%;
+    height: 52vh;
+    top: 9vh;
+    left: .1vh;
+    border-radius: 2.5vh 2.5vh 0 0;
+    overflow-x: hidden !important;
+    overflow-y: scroll;
+}
+
+.advertentie-lijst::-webkit-scrollbar {
+    display: none;
+}
+
+.advertentie {
+    position: relative;
+    width: 85%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    background-color: #ffffff;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: -2px 2px 13px -2px rgba(0,0,0,0.15);
+    font-family: 'Roboto Regular';
+    padding-bottom: 2vh;
+}
+
+.advertentie-owner {
+    position: relative;
+    top: 1vh;
+    left: 1vh;
+    font-family: 'Roboto medium';
+}
+
+.advertentie-nummer {
+    position: relative;
+    float: right;
+    right: 1vh;
+    top: 1vh;
+    font-size: 1.3vh;
+}
+
+.advertentie-nummer1 {
+    position: relative;
+    float: right;
+    right: 0.5vh;
+    top: 1vh;
+    width: 8vh;
+    font-size: 1.3vh;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.advertentie-nummer1::selection {
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.advertentie-bericht {
+    position: relative;
+    top: 2vh;
+    left: 1vh;
+    width: 85%;
+}
+
+.wave {
+    position: absolute;
+}
+
+.wave > path {
+    fill: url(#gradient);
+    fill-opacity: 1;
+}
+
+.nieuw-advertentie {
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    top: -62vh;
+}
+
+.nieuw-advertentie-form {
+    position: absolute;
+    width: 99%;
+    height: 52vh;
+    top: 9vh;
+    left: .1vh;
+    border-radius: 2.5vh 2.5vh 0 0;
+}
+
+#nieuw-advertentie-bericht {
+    position: absolute;
+    top: 3vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 25vh;
+    height: 30vh;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: -2px 2px 13px -2px rgba(0,0,0,0.15);
+    font-family: 'Roboto Regular';
+    font-size: 1.4vh;
+    outline: none;
+    border: none;
+    resize: none;
+    z-index: 100;
+    padding: 1vh;
+}
+
+.nieuw-advertentie-menu {
+    position: absolute;
+    bottom: 8vh;
+    width: 25vh;
+    height: 5vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+}
+
+.nieuw-advertentie-btn {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(243, 243, 243);
+    text-align: center;
+    line-height: 5vh;
+    font-size: 2.2vh;
+    transition: .2s ease-in-out;
+    color: rgb(48, 48, 48);
+    border-radius: 1vh;
+}
+
+.nieuw-advertentie-btn:hover {
+    background-color: #13d4a8;
+    color: #ffffff;
+    transition: .1s ease-in-out;
+}
+
+.nieuw-advertentie-back-btn {
+    position: absolute;
+    color: #ffffff;
+    right: 2vh;
+    top: 5vh;
+    font-size: 2vh;
+    border: 2px solid rgba(228, 228, 228, 0.8);
+    border-radius: 1vh;
+    transition: 0.3s;
+}
+
+.nieuw-advertentie-back-btn > i {
+    padding: 0.5vh 0.75vh 0.5vh 0.75vh;
+}
+
+.nieuw-advertentie-back-btn:hover {
+    background-color: white;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    color: #0081f8;
+    border-radius: 1vh;
+}

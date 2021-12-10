@@ -1,0 +1,505 @@
+.settings-app {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+}
+
+.settings-app-navbar {
+    background-color: rgba(228, 0, 0, 0.877);
+    height: 10vh;
+    color: white;
+}
+
+.settings-app-back-icon {
+    font-family: 'Roboto Regular';
+    font-size: 0.95vh;
+    padding: 3.9vh 0 0 2.0vh;
+    float: left; 
+}
+
+#phone-back-arrow {
+    font-size: 2.5vh;
+    position: relative;
+}
+
+.settings-app-title {
+    font-family: 'Roboto Medium';
+    padding: 4.1vh 0 0 2.0vh;
+    font-size: 1.6vh;
+}
+
+.settings-app-content {
+    position: absolute;
+    top: 8vh;
+    height: 100%;
+    width: 98%;
+    background-color: black;
+    border-radius: 3vh;
+    left: 3px;
+}
+
+.settings-app-tab-appereance {
+    position: absolute;
+    top: 22vh;
+    height: 100%;
+    width: 100%;
+}
+
+.settings-app-tab-information {
+    position: absolute;
+    top: 5vh;
+    height: 100%;
+    width: 100%;
+}
+
+.settings-app-tab {
+    position: relative;
+    width: 100%;
+    height: 4vh;
+    margin: 0 auto;
+    transition: all .1s;
+}
+
+.settings-app-tab:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.settings-app-tab-header {
+    position: absolute;
+    top: -2.5vh;
+    height: 2.6vh;
+    font-family: 'Roboto Medium';
+    font-size: 1.5vh;
+    width: 100%;
+    color: rgb(140, 145, 154);
+}
+
+.settings-app-tab-header > p {
+    padding-left: 2vh;
+}
+
+.settings-tab-title {
+    position: absolute;
+    left: 2.0vh;
+    top: 1.2vh;
+    font-size: 1.3vh;
+    font-family: 'Roboto Medium';
+    color: white;
+}
+
+.settings-tab-description {
+    position: absolute;
+    right: 2vh;
+    top: 1.4vh;
+    font-size: 1.2vh;
+    font-family: 'Roboto Regular';
+    color: white;
+}
+
+.settings-background-tab {
+    display: block;
+    position: absolute;
+    top: -150%;
+    bottom: 15vh;
+    height: 40%;
+    width: 90%;
+    left: 0;
+    right: 0;
+    background: rgb(25, 25, 25);
+    margin: auto;
+    z-index: 1;
+    border-radius: 1vh;
+}
+
+.settings-profilepicture-tab {
+    display: block;
+    position: absolute;
+    top: -150%;
+    bottom: 15vh;
+    height: 40%;
+    width: 90%;
+    left: 0;
+    right: 0;
+    background: rgb(25, 25, 25);
+    margin: auto;
+    z-index: 1;
+    border-radius: 1vh;
+}
+
+.background-options {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 2vh;
+}
+
+.background-option {
+    position: relative;
+    width: 100%;
+    height: 18%;
+    background-color: rgb(25, 25, 25);
+    transition: 0.1s;
+}
+
+.background-option:hover {
+    background-color: rgb(41, 41, 41);
+}
+
+.background-option-icon {
+    position: absolute;
+    height: 100%;
+    width: 6vh;
+    text-align: center;
+    line-height: 7vh;
+    font-size: 2.3vh;
+    color: #fbc531;
+}
+
+.background-option-title {
+    position: absolute;
+    left: 2vh;
+    top: 1.5vh;
+    text-align: center;
+    font-size: 1vh;
+    color: #e6e6e6;
+    font-size: 1.3vh;
+    font-family: 'Roboto Medium';
+}
+
+.background-option-description {
+    position: absolute;
+    left: 2vh;
+    top: 3.6vh;
+    text-align: center;
+    font-size: 1vh;
+    color: #e6e6e6;
+    font-size: 1.1vh;
+    font-family: 'Roboto Regular';
+}
+
+.background-option-current {
+    position: absolute;
+    right: 3vh;
+    top: 1.4vh;
+    text-align: center;
+    font-size: 1.6vh;
+    color: rgba(52, 183, 107, 0.9);
+    font-family: 'Roboto Regular';
+}
+
+.background-buttons {
+    position: absolute;
+    bottom: 0;
+    height: 5vh;
+    width: 100%;
+}
+
+.background-button {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    line-height: 4.7vh;
+    color: #e6e6e6;
+    font-family: 'Roboto Medium';
+    font-size: 1.5vh;
+    transition: .05s;
+    border-top: 2px solid #e8421800;
+}
+
+.background-button:hover {
+    color: rgb(52, 183, 107);
+    border-bottom-left-radius: 1vh;
+    border-bottom-right-radius: 1vh;
+}
+
+.background-custom {
+    display: none;
+    position: absolute;
+    height: 65%;
+    width: 95%;
+    background-color: rgb(41, 41, 41);
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -23vh;
+    border-radius: 1vh;
+    overflow: hidden;
+}
+
+.background-custom-title {
+    font-family: 'Roboto Bold';
+    padding: 2vh;
+    font-size: 1.5vh;
+    text-align: center;
+    color: white;
+}
+
+.custom-background-input {
+    position: absolute;
+    left: 1vh;
+    background: none;
+    border: none;
+    outline: none;
+    height: 3.5vh;
+    width: 22vh;
+    font-family: 'Roboto Regular';
+    background: rgb(60, 60, 60);
+    border-radius: 1vh;
+    text-align: center;
+}
+
+.custom-background-input::placeholder {
+    text-align: center;
+}
+
+.background-custom-buttons {
+    position: absolute;
+    bottom: 0vh;
+    width: 100%;
+    height: 5vh;
+}
+
+.custom-background-button {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    line-height: 4.1vh;
+    color: #e6e6e6;
+    font-family: 'Roboto Regular';
+    font-size: 1.5vh;
+    transition: .08s;
+    border-bottom: 2px solid #e8421800;
+}
+
+.custom-background-button:hover {
+    color: rgb(52, 183, 107);
+    border-bottom-left-radius: 1vh;
+    border-bottom-right-radius: 1vh;
+}
+
+.profilepicture-options {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 2vh;
+}
+
+.profilepicture-option {
+    position: relative;
+    width: 100%;
+    height: 18%;
+    /* background-color: rgb(241, 241, 241); */
+    transition: 0.1s;
+}
+
+.profilepicture-option:hover {
+    background-color: rgb(41, 41, 41);
+}
+
+.profilepicture-option-icon {
+    position: absolute;
+    height: 100%;
+    width: 6vh;
+    text-align: center;
+    line-height: 7vh;
+    font-size: 2.3vh;
+    color: #fbc531;
+}
+
+.profilepicture-option-title {
+    position: absolute;
+    left: 2vh;
+    top: 1.5vh;
+    text-align: center;
+    font-size: 1vh;
+    color: #e6e6e6;
+    font-size: 1.3vh;
+    font-family: 'Roboto Medium';
+}
+
+.profilepicture-option-description {
+    position: absolute;
+    left: 6vh;
+    top: 3.6vh;
+    text-align: center;
+    font-size: 1vh;
+    color: #e6e6e6;
+    font-size: 1.1vh;
+    font-family: 'Roboto Regular';
+}
+
+.profilepicture-option-current {
+    position: absolute;
+    right: 3vh;
+    top: 1.4vh;
+    text-align: center;
+    font-size: 1.6vh;
+    color: rgba(52, 183, 107, 0.9);
+    font-family: 'Roboto Regular';
+}
+
+.profilepicture-buttons {
+    position: absolute;
+    bottom: 0;
+    height: 5vh;
+    width: 100%;
+}
+
+.profilepicture-button {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    line-height: 4.7vh;
+    color: #e6e6e6;
+    font-family: 'Roboto Medium';
+    font-size: 1.5vh;
+    transition: .05s;
+    border-top: 2px solid #e8421800;
+}
+
+.profilepicture-button:hover {
+    color: rgb(52, 183, 107);
+    border-bottom-left-radius: 1vh;
+    border-bottom-right-radius: 1vh;
+}
+
+.profilepicture-custom {
+    display: none;
+    position: absolute;
+    height: 65%;
+    width: 95%;
+    background-color: rgb(41, 41, 41);
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -23vh;
+    border-radius: 1vh;
+    overflow: hidden;
+}
+
+.profilepicture-custom-title {
+    font-family: 'Roboto Bold';
+    padding: 2vh;
+    font-size: 1.5vh;
+    text-align: center;
+    color: white;
+}
+
+.custom-profilepicture-input {
+    position: absolute;
+    left: 1vh;
+    background: none;
+    border: none;
+    outline: none;
+    height: 3.5vh;
+    width: 21vh;
+    font-family: 'Roboto Regular';
+    background: rgb(60, 60, 60);
+    border-radius: 1vh;
+    text-align: center;
+}
+
+.custom-profilepicture-input::placeholder {
+    text-align: center;
+}
+
+.profilepicture-custom-buttons {
+    position: absolute;
+    bottom: 0vh;
+    width: 100%;
+    height: 5vh;
+}
+
+.custom-profilepicture-button {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    line-height: 4.1vh;
+    color: #e6e6e6;
+    font-family: 'Roboto Regular';
+    font-size: 1.5vh;
+    transition: .08s;
+    border-bottom: 2px solid #e8421800;
+}
+
+.custom-profilepicture-button:hover {
+    color: rgb(52, 183, 107);
+    border-bottom-left-radius: 1vh;
+    border-bottom-right-radius: 1vh;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: absolute;
+    /* display: inline-block; */
+    width: 50px;
+    height: 24px;
+    top: 52%;
+    right: 2.5vh;
+    transform: translateY(-50%);
+}
+  
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #4a4a4a;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #34b76b;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #34b76b;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+/* Rounded sliders */
+.slider.round {
+    border-radius: 24px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}

@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+
+    <div id="statusHud">
+        <div class="barHealth">
+            <!--<svg width="53" height="53">
+                <circle class="progress progress-health" stroke="red" stroke-width="3" style="stroke-opacity: 1;" fill="#1c1c20" r="20" cx="25" cy="25" stroke-dasharray="80 30" stroke-linecap="round" stroke-dashoffset="0"/>
+            </svg>-->
+            <p class="healthtext"></p>
+
+            <img class="barIconHealth" src="img/heart.svg"></img>
+        </div>
+        <div class="bar">
+           <!-- <svg width="53" height="53" style="position: relative; left:22px;">
+                <circle class="progress progress-armor" stroke="green" stroke-width="3" style="stroke-opacity: 1;" fill="#1c1c20" r="20" cx="25" cy="25" stroke-dasharray="80 30" stroke-linecap="round" stroke-dashoffset="0"/>
+            </svg>-->
+
+            <p class="armortext"></p>
+            
+            <img class="barIconArmor" src="img/shield.svg"></img>
+        </div>
+        <div class="bar">
+            <!--<svg width="53" height="53" style="position: relative; left:45px;">
+                <circle class="progress progress-burger" stroke="orange" stroke-width="3" style="stroke-opacity: 1;" fill="#1c1c20" r="20" cx="25" cy="25" stroke-dasharray="80 30" stroke-linecap="round" stroke-dashoffset="0"/>
+            </svg>-->
+
+           <p class="burgertext"></p>
+
+            <img class="barIconYemek" src="img/burger.svg"></img>
+        </div>
+        <div class="bar">
+           <!-- <svg width="53" height="53" style="position: relative; left:66px;">
+                <circle class="progress progress-water" stroke="#0aa8db" stroke-width="3" style="stroke-opacity: 1;" fill="#1c1c20" r="20" cx="25" cy="25" stroke-dasharray="80 30" stroke-linecap="round" stroke-dashoffset="0"/>
+            </svg>-->
+
+            <p class="watertext"></p>
+
+            <img class="barIconSu" src="img/water.svg"></img>
+        </div>
+        <div class="bar">
+            <!--<svg width="53" height="53" style="position: relative; left:87px;">
+                <circle class="progress progress-stress" stroke="red" stroke-width="3" style="stroke-opacity: 1;" fill="#1c1c20" r="20" cx="25" cy="25" stroke-dasharray="80 30" stroke-linecap="round" stroke-dashoffset="0"/>
+            </svg>-->
+
+            <p class="stresstext"></p>
+
+            <img class="barIconStress" src="img/brain.svg"></img>
+        </div>
+        <div id="varSetOxy" class="barOxy">
+            <!--<svg width="53" height="53" style="position: relative; left:110px;">
+                <circle class="progress progress-oxygen" stroke="white" stroke-width="3" style="stroke-opacity: 1;" fill="#1c1c20" r="20" cx="25" cy="25" stroke-dasharray="80 30" stroke-linecap="round" stroke-dashoffset="0"/>
+            </svg>-->
+
+            <p class="oxygentext"></p>
+
+            <img class="barIconOxy" src="img/oxygen.svg"></img>
+        </div>
+        <div id="varSetVoice" class="voice" style="position: relative; top: 12; left: 305;">
+            <div class="voice3" style="position: relative; right: 3%;"></div>
+            <div class="voice2" style="position: relative; right: 1%;"></div>
+            <div class="voice1" style="position: relative; right: 3%;"></div>
+        </div>
+
+
+
+        <p class="speedtext"></p>
+        <p class="fueltext"></p>
+        <p class="beltText"></p>
+        <!--<p class="timetext"></p>-->
+
+    </div>
+</body>
+
+<script src="script.js" type="text/javascript"></script>
+</html>
