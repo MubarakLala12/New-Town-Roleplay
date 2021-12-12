@@ -1,0 +1,34 @@
+name: NTRP
+author: Mubarak
+description: NTRP Framework - Without Assets (MLO and Vehicles).
+
+tasks:
+  - action: download_github
+    src: https://github.com/MubarakLala12/New-Town-Roleplay/archive/refs/heads/master.zip
+    dest: ./temp/
+
+  - action: move_path
+    src: ./temp/resources
+    dest: ./resources
+    overwrite: true
+
+  - action: move_path
+    src: ./temp/server.cfg
+    dest: ./server.cfg
+    overwrite: true
+
+  - 
+  
+  - action: connect_database
+
+  - action: query_database
+    file: ./temp/sql.sql
+
+  - action: replace_string
+    mode: all_vars
+    file: 
+      - ./resources/[cores]/ghmattimysql/config.json
+
+  - action: remove_path
+    path: ./temp
+
