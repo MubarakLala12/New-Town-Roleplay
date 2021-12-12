@@ -1,6 +1,6 @@
 $engine: 3
 $onesync: on
-name: CFX Default
+name: New-Town-Roleplay
 version: 3.3.0
 author: Tabarra
 description: Recipe for the base resources required to run a minimal FiveM server.
@@ -8,7 +8,7 @@ description: Recipe for the base resources required to run a minimal FiveM serve
 tasks: 
   Download default CFX resources
   - action: download_github
-    src: https://github.com/MubarakLala12/New-Town-Roleplay.git
+    src: https://github.com/MubarakLala12/New-Town-Roleplay
     ref: master
     subpath: resources
     dest: ./resources
