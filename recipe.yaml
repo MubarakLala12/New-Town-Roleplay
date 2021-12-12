@@ -1,19 +1,34 @@
-$engine: 3
-$onesync: on
-name: New-Town-Roleplay
-version: 3.3.0
-author: Tabarra
-description: Recipe for the base resources required to run a minimal FiveM server.
+name: NTRP
+author: Mubarak
+description: NTRP Framework - Without Assets (MLO and Vehicles).
 
-tasks: 
-  Download default CFX resources
+tasks:
   - action: download_github
-    src: https://github.com/MubarakLala12/New-Town-Roleplay
-    ref: master
-    subpath: resources
-    dest: ./resources
+    src: https://github.com/MubarakLala12/New-Town-Roleplay/archive/refs/heads/master.zip
+    dest: ./temp/
 
-   Download default server.cfg
-  - action: download_file
-    url: https://github.com/MubarakLala12/New-Town-Roleplay.git
-    path: ./server.cfg
+  - action: move_path
+    src: ./temp/resources
+    dest: ./resources
+    overwrite: true
+
+  - action: move_path
+    src: ./temp/server.cfg
+    dest: ./server.cfg
+    overwrite: true
+
+  - 
+  
+  - action: connect_database
+
+  - action: query_database
+    file: ./temp/sql.sql
+
+  - action: replace_string
+    mode: all_vars
+    file: 
+      - ./resources/[cores]/ghmattimysql/config.json
+
+  - action: remove_path
+    path: ./temp
+
